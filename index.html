@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html class="page  no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta content="notranslate" name="google">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>Главная</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Убрать на html класс "no-js", добавить класс "js": с уровня стилей знаем работает ли JS
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+    // Браузер и ОС
+    function cth(c) { document.documentElement.classList.add(c) }
+    'ontouchstart' in window ? cth('touch') : cth('no-touch');
+    if (typeof InstallTrigger !== 'undefined') cth('firefox');
+    if (/constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]" })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification))) cth('safari');
+    if (/*@cc_on!@*/false || !!document.documentMode) cth('ie');
+    if (!(/*@cc_on!@*/false || !!document.documentMode) && !!window.StyleMedia) cth('edge');
+    if (!!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime)) cth('chrome');
+    if (~navigator.appVersion.indexOf("Win")) cth('windows');
+    if (~navigator.appVersion.indexOf("Mac")) cth('osx');
+    if (~['iPad', 'iPhone', 'iPod'].indexOf(navigator.platform)) cth('ios');
+    if (~navigator.appVersion.indexOf("Linux")) cth('linux');
+
+    // Добавление 1vh (использование: height: 100vh; height: calc(var(--vh, 1vh) * 100);) для фикса 100vh на мобилках
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    window.addEventListener('resize', () => {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  </script>
+</head>
+
+<body><noscript>У вас отключен JavaScript. Это пугает.</noscript>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header">
+        <div class="page-header__inner"><a class="logo"><img src="img/logo.png" alt="Логотип АО «АРК Техник»"
+              width="190"></a>
+          <nav class="main-nav" id="nav"><button class="burger main-nav__toggler" aria-label="Показать главное меню"
+              data-target-id="nav" data-target-class-toggle="main-nav--open"><span>Показать главное меню</span></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="#services">Наши услуги</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#about">Почему мы</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#guarantee">Гарантия</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#questions">Вопросы</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="page-header__feedback"><a href="tel:+74955555555"> 8 (495) 555 55-55</a><a href="#modal-callback"
+              data-modal="open">Обратный звонок</a></div>
+        </div>
+      </header>
+      <section class="intro">
+        <div class="intro__text-wrap">
+          <h1 class="intro__title">Широкоформатная печать
+            <span>для бизнеса</span>
+          </h1>
+          <p class="intro__dsc">От&nbsp;компании, обслуживающей авиасектор России</p><button
+            class="btn  btn--w-100 btn--is-icon" type="button" data-modal-target="#modal-callback"
+            data-modal="open">Оставить заявку<span class="btn__icon"><svg width="38" height="16">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg></span></button>
+        </div>
+        <div class="intro__img-wrap">
+          <picture><img src="img/intro.jpg" alt="Изображения процесса печати принтера" width="705"></picture>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="services__inner">
+          <h2 class="services__title">Услуги печати</h2>
+          <div class="accordion  accordion--over-size accordion--text-lg" data-accordion="parent"
+            data-single="data-single">
+            <div class="accordion__element" data-accordion="element"><button class="accordion__button" type="button"
+                data-accordion="button"><span class="css-icon-arrow" style="background-color: #EF476F"></span><span
+                  class="accordion__buton-text">Оконная, витринная и напольная графика</span></button>
+              <div class="accordion__content" data-accordion="content">
+                <div class="accordion__wrapper">
+                  <p>Оформление витрин, а также любых стеклянных, зеркальных, напольных и других гладких непористых
+                    поверхностей. Современные технологии позволяют добиваться качественного эффекта визуального и
+                    психологического воздействия на потребителя, сохраняя презентабельный внешний вид. Использование
+                    такого типа графики поможет обратить на вас внимание и привлечь посетителей в ваше заведение.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__element" data-accordion="element"><button class="accordion__button" type="button"
+                data-accordion="button"><span class="css-icon-arrow" style="background-color: #FFD166"></span><span
+                  class="accordion__buton-text">Печать этикеток и наклеек</span></button>
+              <div class="accordion__content" data-accordion="content">
+                <div class="accordion__wrapper">
+                  <p>Этикетки и наклейки для нужд бизнеса и организаций мероприятий. Способны работать с различными
+                    форматами и размерами продукцию. В зависимости от тиража, готовый заказ вы можете получить уже через
+                    сутки!</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__element" data-accordion="element"><button class="accordion__button" type="button"
+                data-accordion="button"><span class="css-icon-arrow" style="background-color: #06D6A0"></span><span
+                  class="accordion__buton-text">Печать баннеров и перетяжек</span></button>
+              <div class="accordion__content" data-accordion="content">
+                <div class="accordion__wrapper">
+                  <p>Баннеры - одна из наиболее доступных форм информационно-рекламных носителей для широкого
+                    использования. Благодаря своим габаритам и относительной дешевизне, их использование может окупить
+                    себя в несколько раз. Перетяжка - полотнище с изображением, чаще всего используемое над проезжей
+                    частью или на открытой местности на стойках. Заметность такого носителя также благоприятно влияет на
+                    узнаваемость бренда заказчика.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__element" data-accordion="element"><button class="accordion__button" type="button"
+                data-accordion="button"><span class="css-icon-arrow" style="background-color: #118AB2"></span><span
+                  class="accordion__buton-text">Интерьерная печать</span></button>
+              <div class="accordion__content" data-accordion="content">
+                <div class="accordion__wrapper">
+                  <p>Фотообои, панели, комнатные баннеры – элементы, которые могут индивидуализировать ваше помещение, а
+                    также станут дополнительным рекламным приемом, привлекающим внимание посетителей.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__element" data-accordion="element"><button class="accordion__button" type="button"
+                data-accordion="button"><span class="css-icon-arrow" style="background-color: #94B92A"></span><span
+                  class="accordion__buton-text">Печать автомобильных наклеек</span></button>
+              <div class="accordion__content" data-accordion="content">
+                <div class="accordion__wrapper">
+                  <p>Мы также печатаем мелкие и широкоформатные наклейки для автомобилей, сохраняющие цветопередачу и
+                    износостойкость к воздействию окружающей среды. Возможность монтажа обсуждается отдельно!</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__element" data-accordion="element"><button class="accordion__button" type="button"
+                data-accordion="button"><span class="css-icon-arrow" style="background-color: #EC9733"></span><span
+                  class="accordion__buton-text">Световые короба и вывески с гибкой лицевой поверхностью</span></button>
+              <div class="accordion__content" data-accordion="content">
+                <div class="accordion__wrapper">
+                  <p>Световой короб (лайтбокс) - объемная конструкция с лицевой поверхностью из светопропускающего
+                    материала, с боковинами и тыльной поверхностью из металла или пластика ПВХ. Световые короба широко
+                    применяются в наружной и интерьерной рекламе за счет своей эффектности и привлекательности. Световые
+                    короба могут быть как единой картинкой, так и составленные по отдельности в текст или цифры.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about__inner">
+          <h2 class="about__title">15 лет опыта работы</h2>
+          <ul class="about__list">
+            <li class="about__list-item"><svg class="svg-case" width="73" height="64">
+                <use xlink:href="img/sprite.svg#case"></use>
+              </svg>Лицензированы на&nbsp;работу в&nbsp;высокоточных секторах (ФАП 285, ИСО 9001, EASA и&nbsp;др.)</li>
+            <li class="about__list-item"><svg class="svg-care" width="40" height="68">
+                <use xlink:href="img/sprite.svg#care"></use>
+              </svg>Специализируемся на&nbsp;работе<br>
+              с&nbsp;b2b клиентами</li>
+            <li class="about__list-item"><svg class="svg-brush" width="56" height="48">
+                <use xlink:href="img/sprite.svg#brush"></use>
+              </svg>Собственная лаборатория и&nbsp;штат квалифицированных дизайнеров</li>
+          </ul>
+        </div>
+      </section>
+      <section class="guarantee" id="guarantee">
+        <div class="guarantee__inner">
+          <div class="guarantee__left-col">
+            <picture><img class="guarantee__img" src="img/billboard.jpg" alt="Изображения процесса печати принтера"
+                width="410"></picture><button class="btn  btn--is-icon btn--color-revert guarantee__btn" type="button"
+              data-modal-target="#modal-callback" data-modal="open">Получить подробную консультацию<span
+                class="btn__icon"><svg width="38" height="16">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg></span></button>
+          </div>
+          <div class="guarantee__right-col">
+            <h2 class="guarantee__title">Преимущества высокого качества печати</h2>
+            <ul class="guarantee__list">
+              <li class="guarantee__list-item"><b class="color--apple-green">Контрастность</b> изображений и&nbsp;<b
+                  class="color--red">четкость</b> мелких текстов и&nbsp;тонких линий</li>
+              <li class="guarantee__list-item">Превосходная <b class="color--blue">маскирующая способность</b> белых
+                чернил</li>
+              <li class="guarantee__list-item">Использование УФ&nbsp;чернил с&nbsp;Сертификатом <b class="color--main">
+                  GREENGUARD GOLD</b>, означающая полную безопасность для людей</li>
+              <li class="guarantee__list-item">Высокая <b class="color--red"> стойкость</b> чернильного слоя
+                к&nbsp;спиртам, воздействию атмосферных факторов и&nbsp;абразивному износу</li>
+              <li class="guarantee__list-item">Экологическая <b class="color--apple-green">безопасность</b>, отсутствие
+                в&nbsp;составе чернил <br>опасных летучих органических соединений. Пригодность для использования готовой
+                печатной продукции в <b class="color--green">жилых помещениях и&nbsp;детских/медицинских</b>
+                учреждениях.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="clients" id="clients">
+        <div class="clients__inner">
+          <h2 class="clients__title">Наши клиенты</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper"><a class="clients__link swiper-slide" href="https://irkut.com/" target="_blank">
+                <picture><img class="clients__img" src="img/logo1.png" alt="Логотип компании «Иркут»"></picture>
+              </a><a class="clients__link swiper-slide" href="http://fsb.ru/" target="_blank">
+                <picture><img class="clients__img" src="img/logo2.png" alt="Логотип ФГКУ «УА ФСБ России»"></picture>
+              </a><a class="clients__link swiper-slide" href="https://mil.ru/" target="_blank">
+                <picture><img class="clients__img" src="img/logo3.png" alt="Логотип МО РФ"></picture>
+              </a><a class="clients__link swiper-slide"
+                href="https://udprf.ru/content/federalnoe-gosudarstvennoe-byudzhetnoe-uchrezhdenie-specialnyy-letnyy-otryad-rossiya"
+                target="_blank">
+                <picture><img class="clients__img" src="img/logo4.png" alt="Логотип Специальный лётный отряд «Россия»">
+                </picture>
+              </a><a class="clients__link swiper-slide" href="www.cubana.cu" target="_blank">
+                <picture><img class="clients__img" src="img/logo5.png" alt="Логотип Cubana Puerta de Cuba al Mundo">
+                </picture>
+              </a><a class="clients__link swiper-slide" href="http://aviamchs.ru/" target="_blank">
+                <picture><img class="clients__img" src="img/logo6.png" alt=""></picture>
+              </a></div>
+          </div>
+        </div>
+      </section>
+      <section class="call-to-action" id="callToAction">
+        <div class="call-to-action__inner">
+          <h2 class="call-to-action__title">Запросите <span>индивидуальный</span> расчет стоимости</h2>
+          <p class="call-to-action__dsc">с&nbsp;действующим скидочным предложением <b>до&nbsp;12&nbsp;сентября</b></p>
+          <form class="call-to-action__form form" id="formtSpecial">
+            <div class="form__field-wrap"><input class="form__input" id="fieldNameformSpecial" type="text" name="name"
+                placeholder="Имя, например: Владимир"><label class="form__label" for="fieldNameformSpecial">Как к Вам
+                обращаться?</label></div>
+            <div class="form__field-wrap"><input class="form__input" id="fieldTelformSpecial" type="tel" name="tel"
+                required placeholder="Телефон: +7 (915) 030-49-62"><label class="form__label"
+                for="fieldTelformSpecial">Ваш номер для связи</label></div>
+          </form><button class="call-to-action__btn btn" form="formtSpecial" type="submit">Отправить</button>
+        </div>
+      </section>
+      <section class="stages" id="stages">
+        <div class="stages__inner">
+          <div class="stages__grid">
+            <h2 class="stages__title">Индивидуальный подход</h2>
+            <p class="stages__item">Помогаем в&nbsp;вопросах персонализации рекламного стиля</p>
+            <p class="stages__item">Консультируем на&nbsp;этапе выбора материалов</p>
+            <p class="stages__item">Создаём дизайн с&nbsp;нуля или работаем по&nbsp;Вашим макетам</p>
+            <p class="stages__item">Можем самостоятельно выполнить монтажные работы</p>
+          </div>
+        </div>
+      </section>
+      <section class="questions" id="questions">
+        <div class="questions__inner">
+          <h2 class="questions__title">Нас часто спрашивают</h2>
+          <div class="accordion" data-accordion="parent" data-single="data-single">
+            <div class="accordion__element" data-accordion="element"><button class="accordion__button" type="button"
+                data-accordion="button"><span class="accordion__buton-text">На каком оборудовании вы
+                  печатаете?</span></button>
+              <div class="accordion__content" data-accordion="content">
+                <div class="accordion__wrapper">
+                  <p>Печатаем на японских машинах: Mimaki UJV 100-160 и Mimaki CG-130SR. Это универсальные плоттеры для
+                    решения большинства печатных задач.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__element" data-accordion="element"><button class="accordion__button" type="button"
+                data-accordion="button"><span class="accordion__buton-text">Если у меня большой заказ, будет ли
+                  скидка?</span></button>
+              <div class="accordion__content" data-accordion="content">
+                <div class="accordion__wrapper">
+                  <p>У нас предусмотрены как розничные, так и оптовые цены. Наш менеджер подробно проконсультирует Вас
+                    по специальным и акционным предложениям.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__element" data-accordion="element"><button class="accordion__button" type="button"
+                data-accordion="button"><span class="accordion__buton-text">Вы работаете по России или только по
+                  Москве?</span></button>
+              <div class="accordion__content" data-accordion="content">
+                <div class="accordion__wrapper">
+                  <p>Основной регион деятельности — Москва и область. Но общая география наших работ — вся Россия.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__element" data-accordion="element"><button class="accordion__button" type="button"
+                data-accordion="button"><span class="accordion__buton-text">Если вы работаете с авиасектором, не будут
+                  ли ваши услуги стоить слишком дорого?</span></button>
+              <div class="accordion__content" data-accordion="content">
+                <div class="accordion__wrapper">
+                  <p>Нет! Мы оптимизируем цены, поэтому стоимость наших услуг среднерыночная. А некоторые услуги даже
+                    ниже среднего.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__element" data-accordion="element"><button class="accordion__button" type="button"
+                data-accordion="button"><span class="accordion__buton-text">У меня очень сжатые сроки, как быстро вы
+                  можете выполнить работы?</span></button>
+              <div class="accordion__content" data-accordion="content">
+                <div class="accordion__wrapper">
+                  <p>Срок исполнения заказа от 1 дня. Мы всегда идем навстречу клиенту и помогаем найти наилучшие пути
+                    решения.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="call-to-action call-to-action--bg--vector" id="callToActionSecond">
+        <div class="call-to-action__inner call-to-action__inner--grid--form-side">
+          <h2 class="call-to-action__title">Оставьте заявку <span>до&nbsp;12&nbsp;сентября</span> чтобы забронировать
+            индивидуальную <span>скидку</span></h2>
+          <p class="call-to-action__dsc">разработку дизайн-концепта</p>
+          <form class="call-to-action__form form" id="formtDiscount">
+            <div class="form__field-wrap"><input class="form__input" id="fieldNameformDiscount" type="text" name="name"
+                placeholder="Имя, например: Владимир"><label class="form__label" for="fieldNameformDiscount">Как к Вам
+                обращаться?</label></div>
+            <div class="form__field-wrap"><input class="form__input" id="fieldTelformDiscount" type="tel" name="tel"
+                required placeholder="Телефон: +7 (915) 030-49-62"><label class="form__label"
+                for="fieldTelformDiscount">Ваш номер для связи</label></div><button class="call-to-action__btn btn"
+              form="formtSpecial" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="contacts__inner">
+          <div class="contacts__left-col">
+            <h2 class="contacts__title">Наши контакты</h2>
+            <address class="contacts__address"><a
+                href="https://yandex.ru/maps/213/moscow/?ll=37.400826%2C55.729631&amp;mode=routes&amp;rtext=~55.729829%2C37.401807&amp;rtt=auto&amp;ruri=~&amp;utm_source=main_stripe_big&amp;z=18.8"
+                target="_blank">Москва, ул. Ивано-Франко д.46 с.4<br></a><a
+                href="tel:+79150304962">+7(915)030-49-62<br></a><a
+                href="mailto:print@ark-technik.ru">print@ark-technik.ru<br></a></address>
+          </div>
+          <div class="contacts__right-col">
+            <div class="contacts__map-wrap"><img src="img/yandex-map.png" alt="Карта расположения офиса">
+              <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6c6673ab6d23d358492423d4bce126ff9e99d367201f373cf9f9cc3b4ce4b915&amp;width=100%25&amp;height=504&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer">
+        <div class="page-footer__inner"><a class="logo"><img src="img/logo.png" alt="Логотип АО «АРК Техник»"
+              width="190"></a></div>
+      </footer>
+    </div>
+  </div>
+  <section class="modal" id="modal-callback" tabindex="-1" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__content"><button class="close  close--sm modal__close" type="button" aria-label="Закрыть"
+          title="Закрыть" data-modal="close"><span>Закрыть</span></button>
+        <header class="modal__header">
+          <h5 class="modal__title">Оставьте контакты</h5>
+        </header>
+      </div>
+    </div>
+  </section>
+  <script src="js/bundle.js">
+  </script>
+
+</body>
+
+</html>
