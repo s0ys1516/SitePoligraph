@@ -1380,13 +1380,15 @@ span.green-text {
 .btn--sec:focus {
 	text-decoration:none;
 	background-color:#c9641d;
-	color:#e6e6e6
+	color:#e6e6e6;
+	border-color: #c9641d;
 }
 
 .btn--sec:active,
 .btn--sec:focus {
 	outline:0;-webkit-box-shadow:0 0 0 2px rgba(226,126,54,.7);
-	box-shadow:0 0 0 2px rgba(226,126,54,.7)
+	box-shadow:0 0 0 2px rgba(226,126,54,.7);
+	border-color: #c9641d;
 }
 
 
