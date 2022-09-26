@@ -386,6 +386,13 @@ span.blue-text {
 		margin-top: 100px;
 	}
 
+	.intro__img-wrap img {
+		right: -231px;
+		top: 58px;
+		z-index: -1;
+		transform: scale(0.65);
+	}
+
 	.about__title-fl {
 		margin: 56px 0 29px;
 	}
@@ -1344,6 +1351,14 @@ span.green-text {
 		background-image: none;
 	}
 
+	.trust-car {
+		padding: 47px 8px 0;
+	}
+
+	.call-to-action__dsc-green::before {
+		left: -17px;
+	}
+
 	.individually__inner {
 		max-width: 300px;
 		flex-direction: column;
@@ -1368,9 +1383,13 @@ span.green-text {
 	.individually__item:nth-child(2) {
 		margin-top: 30px;
 	}
-}
 
-.item__btn:hover,
+	.call-to-action__dsc-green {
+		padding: 17px 0 17px 50px;
+	}
+}	
+
+.item__btn:hover, 
 .item__btn:focus {
 	text-decoration:none;
 	background-color:#c9641d;
