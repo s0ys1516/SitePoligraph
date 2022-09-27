@@ -88,7 +88,8 @@
 
 .intro--sec {
     padding-top: 8px;
-    margin-bottom: 170px;
+    margin: 0 auto 170px;
+	max-width: 1380px;
 }
 
 .intro__title--sec {
@@ -107,12 +108,12 @@
 
 .intro__img-wrap--sec {
     z-index: -1;
-    right: 0px;
-    top: 85px;
+    right: -220px;
+    top: 172px;
     position: absolute;
     overflow: hidden;
-    min-height: 623px;
-    width: 72%;
+    min-height: 360px;
+    width: 740px;
 }
 
 .sup {
@@ -369,11 +370,21 @@ span.blue-text {
 		margin-top: 100px;
 	}
 
-	.intro__img-wrap--sec img {
-		right: -231px;
-		top: 58px;
-		z-index: -1;
-		transform: scale(0.65);
+	.nav__item-header {
+		padding: 17px 18.5px;
+	}
+
+	.nav__item > a {
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.intro__img-wrap--sec {
+		right: 0px;
+		top: 170px;
+		position: absolute;
+		min-height: 426px;
+		width: 600px;
 	}
 
 	.about__title-fl {
@@ -517,6 +528,28 @@ span.blue-text {
 	}
 }
 
+@media (max-width: 1150px) {
+
+	.nav__list-header {
+		margin: 39px 18px 0;
+	}
+}
+
+@media (max-width: 1050px) {
+
+	.intro__img-wrap--sec {
+		right: 0px;
+		top: 225px;
+		position: absolute;
+		min-height: 426px;
+		width: 555px;
+	}
+
+	.nav__list-header {
+		margin: 39px 18px 0;
+	}
+}	
+
 @media (max-width: 991.98px) {
 	a.logo > img {
 		max-width: 167px;
@@ -549,19 +582,6 @@ span.blue-text {
 		margin: 14px 0 0 47px;
 	}
 
-	.nav__list-header {
-		margin: 39px 18px 0;
-	}
-
-	.nav__item-header {
-		padding: 17px 18.5px;
-	}
-
-	.nav__item > a {
-		font-size: 14px;
-		line-height: 16px;
-	}
-
 	.page-footer__inner {
 		flex-wrap: wrap;
 	}
@@ -581,10 +601,10 @@ span.blue-text {
 	}
 
 	.intro__img-wrap--sec img {
-		right: -201px;
-		top: 127px;	
-		transform: scale(0.7);
+		right: 0;
+		top: 80px;
 		position: absolute;
+		height: 256px;
 	}
 
 	.page-footer__nav > ul {
@@ -607,6 +627,19 @@ span.blue-text {
 @media (max-width: 767.98px) {
 	a.logo > img {
 		max-width: 140px;
+	}
+
+	.intro--sec {
+		margin: 0 auto 0;
+	}
+
+	.intro__img-wrap--sec img {
+		max-width: none;
+		right: 0px;
+		height: 257px;
+		top: 20px;
+		z-index: -1;
+		transform: scale(1);
 	}
 
 	.item__title {
@@ -661,15 +694,6 @@ span.blue-text {
 		padding: 52px 0 0;
 	}
 
-	.intro__img-wrap--sec img {
-		max-width: none;
-		right: -34px;
-		height: 174px;
-		top: 321px;
-		z-index: -1;
-		transform: scale(1.2);
-	}
-
 	.intro__title {
 		font-size: 24px;
 		line-height: 28px;
@@ -689,10 +713,6 @@ span.blue-text {
 	.intro__text-wrap > button {
 		font-size: 18px;
 		line-height: 21px;
-	}
-
-	.intro__img-wrap--sec img {
-		align-self: end;
 	}
 
 	.trust {
@@ -1358,6 +1378,15 @@ span.green-text {
 
 	.call-to-action__dsc-green {
 		padding: 17px 0 17px 50px;
+	}
+
+	.intro__img-wrap--sec {
+		right: -71px;
+		top: 225px;
+		position: absolute;
+		min-height: 426px;
+		width: 474px;
+		transform: scale(0.7);
 	}
 }	
 
