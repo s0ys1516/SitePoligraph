@@ -55,12 +55,12 @@
         <div class="page-header__inner"><a class="logo"><img src="img/logo.png" alt="Логотип АО «АРК Техник»"
               width="190"></a>
           <h1 class="page-header__title">Обслуживание воздушных судов в Москве</h1>
-          <div class="page-header__feedback page-header__feedback-blue"><a
-              class="header__feedback header__feedback-blue" href="tel:+79150304962"> 8 (915) 030
-              49-62</a><a class="header__feedback" href="#modal-callback" data-modal="open">Обратный звонок</a></div>
+          <div class="page-header__feedback page-header__feedback--blue"><a class="feedback feedback--blue"
+              href="tel:+79150304962"> 8 (915) 030
+              49-62</a><a class="feedback" href="#modal-callback" data-modal="open">Обратный звонок</a></div>
         </div>
         <nav class="page-header__nav">
-          <ul class="nav__list nav__list-header">
+          <ul class="nav nav-header">
             <li class="nav__item nav__item-header nav__item-header--blue"><a href="car.html">Брендирование
                 транспорта</a></li>
             <li class="nav__item nav__item-header nav__item-header--blue"><a href="index.html">Полиграфия для
@@ -93,25 +93,31 @@
           <p class="trust__dsc">Работаем с компаниями из разных секторов, находим решения и помогаем достичь результата
           </p>
         </div>
-        <div class="trust__clients">
-          <a class="clients__link" href="https://irkut.com/" target="_blank">
-            <picture><img class="clients__img" src="img/logo1.png" alt="Логотип компании «Иркут»"></picture>
-          </a><a class="clients__link" href="http://fsb.ru/" target="_blank">
-            <picture><img class="clients__img" src="img/logo2.png" alt="Логотип ФГКУ «УА ФСБ России»"></picture>
-          </a><a class="clients__link" href="https://mil.ru/" target="_blank">
-            <picture><img class="clients__img" src="img/logo3.png" alt="Логотип МО РФ"></picture>
-          </a><a class="clients__link"
-            href="https://udprf.ru/content/federalnoe-gosudarstvennoe-byudzhetnoe-uchrezhdenie-specialnyy-letnyy-otryad-rossiya"
-            target="_blank">
-            <picture><img class="clients__img" src="img/logo4.png" alt="Логотип Специальный лётный отряд «Россия»">
-            </picture>
-          </a><a class="clients__link" href="www.cubana.cu" target="_blank">
-            <picture><img class="clients__img" src="img/logo5.png" alt="Логотип Cubana Puerta de Cuba al Mundo">
-            </picture>
-          </a><a class="clients__link" href="http://aviamchs.ru/" target="_blank">
-            <picture><img class="clients__img" src="img/logo6.png" alt="Авиации МЧС"></picture>
-          </a>
+        <div class="trust__clients-fl">
+          <div class="clients-fl">
+            <a class="clients-fl__link clients__link" href="https://irkut.com/" target="_blank">
+              <picture><img class="clients-fl__img clients__img" src="img/logo1.png" alt="Логотип компании «Иркут»">
+              </picture>
+            </a><a class="clients-fl__link clients__link" href="http://fsb.ru/" target="_blank">
+              <picture><img class="clients-fl__img clients__img" src="img/logo2.png" alt="Логотип ФГКУ «УА ФСБ России»">
+              </picture>
+            </a><a class="clients-fl__link clients__link" href="https://mil.ru/" target="_blank">
+              <picture><img class="clients-fl__img clients__img" src="img/logo3.png" alt="Логотип МО РФ"></picture>
+            </a><a class="clients-fl__link clients__link"
+              href="https://udprf.ru/content/federalnoe-gosudarstvennoe-byudzhetnoe-uchrezhdenie-specialnyy-letnyy-otryad-rossiya"
+              target="_blank">
+              <picture><img class="clients-fl__img clients__img" src="img/logo4.png"
+                  alt="Логотип Специальный лётный отряд «Россия»">
+              </picture>
+            </a><a class="clients-fl__link clients__link" href="www.cubana.cu" target="_blank">
+              <picture><img class="clients-fl__img clients__img" src="img/logo5.png"
+                  alt="Логотип Cubana Puerta de Cuba al Mundo">
+              </picture>
+            </a><a class="clients-fl__link clients__link" href="http://aviamchs.ru/" target="_blank">
+              <picture><img class="clients-fl__img clients__img" src="img/logo6.png" alt="Авиации МЧС"></picture>
+            </a>
 
+          </div>
         </div>
       </section>
       <section class="about about-fl" id="about">
@@ -157,15 +163,15 @@
           <h2 class="call-to-action__title call-to-action__title-fl">Запросите <span
               class="blue-text">индивидуальный</span> расчет стоимости
           </h2>
-          <p class="call-to-action__dsc call-to-action__dsc-blue">с&nbsp;действующим скидочным предложением
+          <p class="call-to-action__dsc call-to-action__dsc--blue">с&nbsp;действующим скидочным предложением
             <b>до&nbsp;22&nbsp;сентября</b>
           </p>
           <form class="call-to-action__form call-to-action__form-fl form" id="formtSpecial">
-            <div class="form__field-wrap"><input class="form__input form__input-blue" id="fieldNameformSpecial"
+            <div class="form__field-wrap"><input class="form__input form__input--blue" id="fieldNameformSpecial"
                 type="text" name="name" placeholder="Имя, например: Владимир"><label class="form__label"
                 for="fieldNameformSpecial">Как к Вам
                 обращаться?</label></div>
-            <div class="form__field-wrap"><input class="form__input form__input-blue" id="fieldTelformSpecial"
+            <div class="form__field-wrap"><input class="form__input form__input--blue" id="fieldTelformSpecial"
                 type="tel" name="tel" required placeholder="Телефон: +7 (915) 030-49-62"><label class="form__label"
                 for="fieldTelformSpecial">Ваш номер для связи</label></div>
           </form><button class="call-to-action__btn btn blue-btn btn--sec" form="formtSpecial"
@@ -201,11 +207,11 @@
               class="blue-text">коммерческое</span> предложение
           </h2>
           <form class="call-to-action__form call-to-action__form-fl form" id="formtSpecialSec">
-            <div class="form__field-wrap"><input class="form__input form__input-blue" id="fieldNameformSpecialSec"
+            <div class="form__field-wrap"><input class="form__input form__input--blue" id="fieldNameformSpecialSec"
                 type="text" name="name" placeholder="Имя, например: Владимир"><label class="form__label"
                 for="fieldNameformSpecial">Как к Вам
                 обращаться?</label></div>
-            <div class="form__field-wrap"><input class="form__input form__input-blue" id="fieldTelformSpecialSec"
+            <div class="form__field-wrap"><input class="form__input form__input--blue" id="fieldTelformSpecialSec"
                 type="tel" name="tel" required placeholder="Телефон: +7 (915) 030-49-62"><label class="form__label"
                 for="fieldTelformSpecial">Ваш номер для связи</label></div>
           </form><button class="call-to-action__btn btn blue-btn btn--sec" form="formtSpecial"
@@ -217,7 +223,7 @@
           <div class="contacts__left-col contacts__left-col--sec">
             <h2 class="contacts__title contacts__title-fl">Приезжайте знакомиться
               и обсуждать детали</h2>
-            <address class="contacts__address contacts__address-blue"><a
+            <address class="contacts__address contacts__address--blue"><a
                 href="https://yandex.ru/maps/213/moscow/?ll=37.400826%2C55.729631&amp;mode=routes&amp;rtext=~55.729829%2C37.401807&amp;rtt=auto&amp;ruri=~&amp;utm_source=main_stripe_big&amp;z=18.8"
                 target="_blank">Москва, ул. Ивано-Франко д.46 с.4<br></a><a
                 href="tel:+79150304962">+7(915)030-49-62<br></a><a
@@ -238,7 +244,7 @@
         <div class="page-footer__inner page-footer__inner--sec"><a class="logo"><img src="img/logo.png"
               alt="Логотип АО «АРК Техник»" width="190"></a>
           <nav class="page-footer__nav">
-            <ul class="nav__list">
+            <ul class="nav">
               <li class="nav__item nav__item-footer nav__item-footer--blue"><a href="car.html">Брендирование
                   транспорта</a></li>
               <li class="nav__item nav__item-footer nav__item-footer--blue"><a href="index.html">Полиграфия для
@@ -248,8 +254,8 @@
               </li>
             </ul>
           </nav>
-          <div class="page-footer__feedback page-footer__feedback-blue">
-            <a class="feedback__text feedback__text-blue" href="tel:+79150304962">+7 (915) 030 49-62</a>
+          <div class="page-footer__feedback page-footer__feedback--blue">
+            <a class="feedback__text feedback__text--blue" href="tel:+79150304962">+7 (915) 030 49-62</a>
             <a class="feedback__text" href="mailto:print@ark-technik.ru">print@ark-technik.ru</a>
           </div>
         </div>
