@@ -482,7 +482,7 @@ span.blue-text {
 	}
 
 	.call-to-action__dsc--blue::before {
-		left: -17px;
+		left: -45px;
 	}
 
 	.call-to-action__dsc--green {
@@ -639,6 +639,10 @@ span.blue-text {
 @media (max-width: 767.98px) {
 	a.logo > img {
 		max-width: 140px;
+	}
+
+	.about__inner-fl {
+		padding-left: 20px;
 	}
 
 	.intro--sec {
@@ -908,6 +912,21 @@ span.blue-text {
 
 	.about__list-item-fl:first-child svg {
 		left: -45px;
+	}
+
+	.about__list-item-car:first-child svg {
+		left: -56px;
+		top: -7px;
+	}
+
+	.about__list-item-car:nth-child(2) svg {
+		left: -47px;
+		top: -19px;
+	}
+
+	.about__list-item-car:last-child svg {
+		left: -50px;
+		top: 0px;
 	}
 }
 
@@ -1566,6 +1585,14 @@ span.green-text {
 	
 	.roll__item:first-child::before {
 		right: 48px;
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	.call-to-action__dsc--green::before {
+		left: 10px;
 	}
 
 }
