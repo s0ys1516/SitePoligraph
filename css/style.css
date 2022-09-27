@@ -88,7 +88,7 @@
 
 .intro--sec {
     padding-top: 8px;
-    margin: 0 auto 170px;
+    margin: 0px 0 170px 100px;
 	max-width: 1380px;
 }
 
@@ -109,7 +109,7 @@
 
 .intro__img-wrap--sec {
     z-index: -1;
-    right: -220px;
+    right: 0;
     top: 172px;
     position: absolute;
     overflow: hidden;
@@ -685,6 +685,7 @@ span.blue-text {
 		line-height: 16px;
 		order: 3;
 		text-align: center;
+		width: 100%;
 		margin: 10px 0 0;
 	}
 
@@ -1406,11 +1407,15 @@ span.green-text {
 
 	.intro__img-wrap--sec {
 		right: -71px;
-		top: 225px;
+		top: 223px;
 		position: absolute;
 		min-height: 426px;
 		width: 474px;
 		transform: scale(0.7);
+	}
+
+	.intro__img-wrap-car--sec {
+		top: 190px;
 	}
 }	
 
@@ -1585,6 +1590,24 @@ span.green-text {
 	.roll__item:nth-child(2)::before,
 	.roll__item:last-child::before {
 		content: none;
+	}
+}
+
+@media (min-width: 1900px) {
+	.individually {
+		background-image: url(../img/car-big.jpg);
+	}
+}
+
+@media (min-width: 1500px) {
+	.intro__img-wrap--sec {
+		width: 900px;
+		height: 413px;
+		right: 0;
+	}
+
+	.intro--sec {
+		margin: 0px auto 170px;
 	}
 }
 

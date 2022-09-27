@@ -81,8 +81,11 @@
                 <use xlink:href="img/sprite.svg#arrow"></use>
               </svg></span></button>
         </div>
-        <div class="intro__img-wrap intro__img-wrap--sec">
-          <picture><img src="img/intro-car.jpg" alt="Изображения процесса печати принтера" width="925"></picture>
+        <div class="intro__img-wrap intro__img-wrap-car--sec intro__img-wrap--sec">
+          <picture>
+            <source srcset="img/intro-car.jpg" media="(min-width: 1500px)">
+            <img src="img/intro-car-small.jpg" alt="Изображение машины" width="925">
+          </picture>
         </div>
       </section>
       <section class="which-car">
