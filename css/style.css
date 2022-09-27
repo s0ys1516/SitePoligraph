@@ -1551,7 +1551,7 @@ span.green-text {
 		right: 97px;
 	}
 
-	.roll__item:first-child::before {
+	.roll__item:last-child::before {
 		right: 179px;
 		top: -160px;
 		transform: rotate(47deg);
@@ -1561,7 +1561,9 @@ span.green-text {
 
 @media (max-width: 767.98px) {
 	
-	.roll__item::before {
+	.roll__item:first-child::before,
+	.roll__item:nth-child(2)::before,
+	.roll__item:last-child::before {
 		content: none;
 	}
 }
