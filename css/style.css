@@ -87,9 +87,9 @@
 }
 
 .intro--sec {
-    padding-top: 8px;
-    margin: 0px 0 170px 100px;
-	max-width: 1380px;
+    padding: 8px 50px 0 50px;
+    margin: 0px auto 170px;
+    max-width: 1500px;
 }
 
 .intro__title--sec {
@@ -1272,7 +1272,7 @@ span.green-text {
 }
 
 .individually { 
-	padding: 155px 76px 145px;
+    padding: 155px 0px 145px 76px;
     max-width: 1920px;
 	background-image: url(../img/car.jpg);
 	background-repeat: no-repeat;
@@ -1329,7 +1329,7 @@ span.green-text {
 	background-position: left center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
 	.individually {
 		margin-bottom: 70px;
 		padding: 155px 0px 30px;
