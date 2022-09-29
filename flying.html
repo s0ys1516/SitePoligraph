@@ -53,11 +53,11 @@
     <div class="page__content">
       <header class="page-header page-header--sec">
         <div class="page-header__inner"><a class="logo" href="#"><img src="img/logo.png" alt="Логотип АО «АРК Техник»"
-              width="190px" height="67px"></a>
+              width="190" height="67"></a>
           <h1 class="page-header__title">Обслуживание воздушных судов в Москве</h1>
           <div class="page-header__feedback page-header__feedback--blue"><a class="feedback feedback--blue"
               href="tel:+79150304962"> 8 (915) 030
-              49-62</a><a class="feedback" href="#modal-callback" data-modal="open">Обратный звонок</a></div>
+              49-62</a><a class="feedback" data-open-modal="modal-callback">Обратный звонок</a></div>
         </div>
         <nav class="page-header__nav">
           <ul class="nav nav-header">
@@ -77,15 +77,15 @@
           </h2>
           <p class="intro__dsc intro__dsc--sec">От сертифицированного партнера, обслуживающего
             воздушные суда более 15 лет</p><button class="btn  btn--w-100 btn--is-icon blue-btn btn--sec" type="button"
-            data-modal-target="#modal-callback" data-modal="open">Запросить прайс<span class="btn__icon blue"><svg
-                width="38" height="16">
+            data-open-modal="modal-callback">Запросить
+            прайс<span class="btn__icon blue"><svg width="38" height="16">
                 <use xlink:href="img/sprite.svg#arrow"></use>
               </svg></span></button>
         </div>
         <div class="intro__img-wrap intro__img-wrap--sec">
           <picture>
             <source srcset="img/intro-fl.jpg" media="(min-width: 1500px)">
-            <img src="img/intro-fl-small.jpg" alt="Изображение самолёта" width="900px" height="413px">
+            <img src="img/intro-fl-small.jpg" alt="Изображение самолёта" width="900" height="413">
           </picture>
         </div>
       </section>
@@ -99,28 +99,28 @@
         <div class="trust__clients-fl">
           <div class="clients-fl">
             <a class="clients-fl__link" href="https://irkut.com/" target="_blank">
-              <picture><img class="clients-fl__img" src="img/logo1.png" width="181px" height="131px"
+              <picture><img class="clients-fl__img" src="img/logo1.png" width="181" height="131"
                   alt="Логотип компании «Иркут»">
               </picture>
             </a><a class="clients-fl__link" href="http://fsb.ru/" target="_blank">
-              <picture><img class="clients-fl__img" src="img/logo2.png" width="103px" height="173px"
+              <picture><img class="clients-fl__img" src="img/logo2.png" width="103" height="173"
                   alt="Логотип ФГКУ «УА ФСБ России»">
               </picture>
             </a><a class="clients-fl__link" href="https://mil.ru/" target="_blank">
-              <picture><img class="clients-fl__img" src="img/logo3.png" width="196px" height="127px"
-                  alt="Логотип МО РФ"></picture>
+              <picture><img class="clients-fl__img" src="img/logo3.png" width="196" height="127" alt="Логотип МО РФ">
+              </picture>
             </a><a class="clients-fl__link"
               href="https://udprf.ru/content/federalnoe-gosudarstvennoe-byudzhetnoe-uchrezhdenie-specialnyy-letnyy-otryad-rossiya"
               target="_blank">
-              <picture><img class="clients-fl__img" src="img/logo4.png" width="129px" height="128px"
+              <picture><img class="clients-fl__img" src="img/logo4.png" width="129" height="128"
                   alt="Логотип Специальный лётный отряд «Россия»">
               </picture>
             </a><a class="clients-fl__link" href="www.cubana.cu" target="_blank">
-              <picture><img class="clients-fl__img" src="img/logo5.png" width="166px" height="65px"
+              <picture><img class="clients-fl__img" src="img/logo5.png" width="166" height="65"
                   alt="Логотип Cubana Puerta de Cuba al Mundo">
               </picture>
             </a><a class="clients-fl__link" href="http://aviamchs.ru/" target="_blank">
-              <picture><img class="clients-fl__img" src="img/logo6.png" width="94px" height="74px" alt="Авиации МЧС">
+              <picture><img class="clients-fl__img" src="img/logo6.png" width="94" height="74" alt="Авиации МЧС">
               </picture>
             </a>
           </div>
@@ -157,35 +157,43 @@
           <div class="sup__item">
             <div class="item">
               <p class="item__title">Техническом обслуживании самолетов</p>
-              <button class="item__btn btn--sec">Заказать звонок по тех. обслуживанию ВС</button>
+              <button class="item__btn btn--sec" data-open-modal="modal-callback">Заказать звонок по тех. обслуживанию
+                ВС</button>
             </div>
           </div>
           <div class="sup__item sup__item-grey">
             <div class="item">
               <p class="item__title">Визуальном оформлении внутренней и внешней части судов</p>
-              <button class="item__btn item__btn-small btn--sec">Заказать звонок по оформлению ВС</button>
+              <button class="item__btn item__btn-small btn--sec" data-open-modal="modal-callback">Заказать звонок по
+                оформлению ВС</button>
             </div>
           </div>
         </div>
       </section>
       <section class="call-to-action call-to-action--sec" id="callToAction">
-        <div class="call-to-action__inner call-to-action__inner-fl">
+        <div class="call-to-action__inner call-to-action__inner-fl" data-validate="data-validate"
+          data-callback="callback">
           <h2 class="call-to-action__title call-to-action__title-fl">Запросите <span
               class="blue-text">индивидуальный</span> расчет стоимости
           </h2>
           <p class="call-to-action__dsc call-to-action__dsc--blue">с&nbsp;действующим скидочным предложением
             <b>до&nbsp;22&nbsp;сентября</b>
           </p>
-          <form class="call-to-action__form call-to-action__form-fl form" id="formtSpecial">
-            <div class="form__field-wrap"><input class="form__input form__input--blue" id="fieldNameformSpecial"
-                type="text" name="name" placeholder="Имя, например: Владимир"><label class="form__label"
+          <form class="call-to-action__form call-to-action__form-fl form" id="formtSpecial" method="post">
+            <div class="form__field-wrap" data-validate-type="text" data-limitations="name"><input
+                class="form__input form__input--blue" id="fieldNameformSpecial" type="text" name="name"
+                placeholder="Имя, например: Владимир" minlength="2"><label class="form__label"
                 for="fieldNameformSpecial">Как к Вам
-                обращаться?</label></div>
-            <div class="form__field-wrap"><input class="form__input form__input--blue" id="fieldTelformSpecial"
-                type="tel" name="tel" required placeholder="Телефон: +7 (915) 030-49-62"><label class="form__label"
-                for="fieldTelformSpecial">Ваш номер для связи</label></div>
-          </form><button class="call-to-action__btn btn blue-btn btn--sec" form="formtSpecial"
-            type="submit">Отправить</button>
+                обращаться?</label>
+            </div>
+            <div class="form__field-wrap" data-validate-type="phone"><input class="form__input form__input--blue"
+                id="fieldTelformSpecial" type="tel" name="tel" required placeholder="Телефон: +7 (915) 030-49-62"><label
+                class="form__label" for="fieldTelformSpecial">Ваш
+                номер для
+                связи</label>
+            </div>
+          </form>
+          <button class="call-to-action__btn btn blue-btn btn--sec" form="formtSpecial" type="submit">Отправить</button>
         </div>
       </section>
       <section class="license">
@@ -194,40 +202,42 @@
           <div class="license__document">
             <div class="document">
               <picture><img class="document__img" src="img/document1.jpg"
-                  alt="Сертификат организации по техническому обслуживанию" width="300px" height="417.5px"></picture>
+                  alt="Сертификат организации по техническому обслуживанию" width="300" height="417.5"></picture>
               <p class="document__dsc">Сертификат организации по техническому обслуживанию</p>
             </div>
             <div class="document">
-              <picture><img class="document__img" src="img/document2.jpg" alt="Сертификат соответствия" width="300px"
-                  height="417.5px"></picture>
+              <picture><img class="document__img" src="img/document2.jpg" alt="Сертификат соответствия" width="300"
+                  height="417.5"></picture>
               <p class="document__dsc">Сертификат соответствия</p>
             </div>
             <div class="document">
-              <picture><img class="document__img" src="img/document3.jpg" alt="Выписка из реества лицензий"
-                  width="300px" height="417.5px"></picture>
+              <picture><img class="document__img" src="img/document3.jpg" alt="Выписка из реества лицензий" width="300"
+                  height="417.5"></picture>
               <p class="document__dsc">Выписка из реества лицензий</p>
             </div>
             <div class="document">
               <picture><img class="document__img" src="img/document4.jpg"
-                  alt="Change to EASA Part-145 approval certificate" width="300px" height="417.5px"></picture>
+                  alt="Change to EASA Part-145 approval certificate" width="300" height="417.5"></picture>
               <p class="document__dsc">Change to EASA Part-145 approval certificate</p>
             </div>
           </div>
         </div>
       </section>
       <section class="call-to-action" id="callToActionSec">
-        <div class="call-to-action__inner call-to-action__inner-fl">
+        <div class="call-to-action__inner call-to-action__inner-fl" data-validate="data-validate"
+          data-callback="callback">
           <h2 class="call-to-action__title call-to-action__title-fl call-to-action__title-fl--sec">Запросите <span
               class="blue-text">коммерческое</span> предложение
           </h2>
-          <form class="call-to-action__form call-to-action__form-fl form" id="formtSpecialSec">
-            <div class="form__field-wrap"><input class="form__input form__input--blue" id="fieldNameformSpecialSec"
-                type="text" name="name" placeholder="Имя, например: Владимир"><label class="form__label"
-                for="fieldNameformSpecial">Как к Вам
+          <form class="call-to-action__form call-to-action__form-fl form" id="formtSpecialSec" method="post">
+            <div class="form__field-wrap" data-validate-type="text" data-limitations="name"><input
+                class="form__input form__input--blue" id="fieldNameformSpecialSec" type="text" name="name"
+                placeholder="Имя, например: Владимир"><label class="form__label" for="fieldNameformSpecial">Как к Вам
                 обращаться?</label></div>
-            <div class="form__field-wrap"><input class="form__input form__input--blue" id="fieldTelformSpecialSec"
-                type="tel" name="tel" required placeholder="Телефон: +7 (915) 030-49-62"><label class="form__label"
-                for="fieldTelformSpecial">Ваш номер для связи</label></div>
+            <div class="form__field-wrap" data-validate-type="phone"><input class="form__input form__input--blue"
+                id="fieldTelformSpecialSec" type="tel" name="tel" required
+                placeholder="Телефон: +7 (915) 030-49-62"><label class="form__label" for="fieldTelformSpecial">Ваш номер
+                для связи</label></div>
           </form><button class="call-to-action__btn btn blue-btn btn--sec" form="formtSpecial"
             type="submit">Отправить</button>
         </div>
@@ -256,7 +266,7 @@
     <div class="page__footer-wrapper">
       <footer class="page-footer page-footer--sec">
         <div class="page-footer__inner page-footer__inner--sec"><a class="logo" href="#"><img src="img/logo.png"
-              alt="Логотип АО «АРК Техник»" width="190px" height="67px"></a>
+              alt="Логотип АО «АРК Техник»" width="190" height="67"></a>
           <nav class="page-footer__nav">
             <ul class="nav">
               <li class="nav__item nav__item-footer nav__item-footer--blue"><a href="car.html">Брендирование
@@ -276,16 +286,20 @@
       </footer>
     </div>
   </div>
-  <section class="modal" id="modal-callback" tabindex="-1" aria-hidden="true">
+  <section class="modal" id="modal-callback" tabindex="-1" aria-hidden="true" data-modal="modal-callback">
     <div class="modal__dialog">
       <div class="modal__content"><button class="close  close--sm modal__close" type="button" aria-label="Закрыть"
-          title="Закрыть" data-modal="close"><span>Закрыть</span></button>
+          title="Закрыть" data-close-modal><span>Закрыть</span></button>
         <header class="modal__header">
           <h5 class="modal__title">Оставьте контакты</h5>
         </header>
       </div>
     </div>
   </section>
+  <script src="js/formValidate.js">
+  </script>
+  <script src="js/modals.js">
+  </script>
   <script src="js/bundle.js">
   </script>
 

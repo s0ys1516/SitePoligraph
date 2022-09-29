@@ -1647,3 +1647,12 @@ span.green-text {
 	}
 }
 
+.scroll-lock-ios {
+	position: fixed; 
+	overflow: hidden;
+}
+
+.scroll-lock {
+	overflow: hidden;
+}
+

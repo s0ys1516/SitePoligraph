@@ -53,11 +53,12 @@
     <div class="page__content">
       <header class="page-header page-header--sec">
         <div class="page-header__inner"><a class="logo" href="#"><img src="img/logo.png" alt="Логотип АО «АРК Техник»"
-              width="190px" height="67px"></a>
+              width="190" height="67"></a>
           <h1 class="page-header__title">Производство пленки для автомобилей в Москве</h1>
           <div class="page-header__feedback page-header__feedback--green"><a class="feedback feedback--green"
               href="tel:+79150304962"> 8 (915) 030
-              49-62</a><a class="feedback" href="#modal-callback" data-modal="open">Обратный звонок</a></div>
+              49-62</a><a class="feedback" href="#modal-callback" data-open-modal="modal-callback">Обратный звонок</a>
+          </div>
         </div>
         <nav class="page-header__nav">
           <ul class="nav nav-header">
@@ -76,15 +77,15 @@
             <span class="green-text">Качественные</span> пленки для оклейки транспорта
           </h2>
           <p class="intro__dsc intro__dsc--sec">От фирмы, обслуживающей авиасектор</p><button
-            class="btn  btn--w-100 btn--is-icon green-btn btn--sec" type="button" data-modal-target="#modal-callback"
-            data-modal="open">Запросить прайс<span class="btn__icon green"><svg width="38" height="16">
+            class="btn  btn--w-100 btn--is-icon green-btn btn--sec" type="button"
+            data-open-modal="modal-callback">Запросить прайс<span class=" btn__icon green"><svg width="38" height="16">
                 <use xlink:href="img/sprite.svg#arrow"></use>
               </svg></span></button>
         </div>
         <div class="intro__img-wrap intro__img-wrap-car--sec intro__img-wrap--sec">
           <picture>
             <source srcset="img/intro-car.jpg" media="(min-width: 1500px)">
-            <img src="img/intro-car-small.jpg" alt="Изображение машины" width="900px" height="413px">
+            <img src="img/intro-car-small.jpg" alt="Изображение машины" width="900" height="413">
           </picture>
         </div>
       </section>
@@ -92,31 +93,30 @@
         <h2 class="which-car__title">Для какого транспорта вам нужна пленка?</h2>
         <div class="which-car__cards">
           <div class="card">
-            <picture><img class="card__img" src="img/car1.jpg" alt="Легковой автомобиль" width="520px"
-                height="243.44px">
+            <picture><img class="card__img" src="img/car1.jpg" alt="Легковой автомобиль" width="520" height="243.44">
             </picture>
-            <button class="card__btn btn--sec">Легковые авто</button>
+            <button class="card__btn btn--sec" data-open-modal="modal-callback">Легковые авто</button>
           </div>
           <div class="card">
-            <picture><img class="card__img" src="img/car2.jpg" alt="Фургон" width="520px" height="243.44px"></picture>
-            <button class="card__btn btn--sec">Фургоны</button>
+            <picture><img class="card__img" src="img/car2.jpg" alt="Фургон" width="520" height="243.44"></picture>
+            <button class="card__btn btn--sec" data-open-modal="modal-callback">Фургоны</button>
           </div>
           <div class="card">
-            <picture><img class="card__img" src="img/car3.jpg" alt="Грузовой авто" width="520px" height="243.44px">
+            <picture><img class="card__img" src="img/car3.jpg" alt="Грузовой авто" width="520" height="243.44">
             </picture>
-            <button class="card__btn btn--sec">Грузовые авто</button>
+            <button class="card__btn btn--sec" data-open-modal="modal-callback">Грузовые авто</button>
           </div>
           <div class="card">
-            <picture><img class="card__img" src="img/car4.jpg" alt="Фура" width="520px" height="243.44px"></picture>
-            <button class="card__btn btn--sec">Фуры</button>
+            <picture><img class="card__img" src="img/car4.jpg" alt="Фура" width="520" height="243.44"></picture>
+            <button class="card__btn btn--sec" data-open-modal="modal-callback">Фуры</button>
           </div>
           <div class="card">
-            <picture><img class="card__img" src="img/car5.jpg" alt="Яхта" width="520px" height="243.44px"></picture>
-            <button class="card__btn btn--sec">Речные и морские суда</button>
+            <picture><img class="card__img" src="img/car5.jpg" alt="Яхта" width="520" height="243.44"></picture>
+            <button class="card__btn btn--sec" data-open-modal="modal-callback">Речные и морские суда</button>
           </div>
           <div class="card">
-            <picture><img class="card__img" src="img/car6.jpg" alt="Поезд" width="520px" height="243.44px"></picture>
-            <button class=" card__btn btn--sec">Выгоны поездов</button>
+            <picture><img class="card__img" src="img/car6.jpg" alt="Поезд" width="520" height="243.44"></picture>
+            <button class=" card__btn btn--sec" data-open-modal="modal-callback">Выгоны поездов</button>
           </div>
         </div>
       </section>
@@ -136,21 +136,22 @@
         </div>
       </section>
       <section class="call-to-action" id="callToAction">
-        <div class="call-to-action__inner call-to-action__inner-fl call-to-action__inner-car">
+        <div class="call-to-action__inner call-to-action__inner-fl call-to-action__inner-car"
+          data-validate="data-validate" data-callback="callback">
           <h2 class="call-to-action__title call-to-action__title-fl">Запросите <span
               class="green-text">индивидуальный</span> расчет стоимости
           </h2>
           <p class="call-to-action__dsc call-to-action__dsc--green">с&nbsp;действующим скидочным предложением
             <b>до&nbsp;22&nbsp;сентября</b>
           </p>
-          <form class="call-to-action__form call-to-action__form-fl form" id="formtSpecial">
-            <div class="form__field-wrap"><input class="form__input form__input--green" id="fieldNameformSpecial"
-                type="text" name="name" placeholder="Имя, например: Владимир"><label class="form__label"
-                for="fieldNameformSpecial">Как к Вам
+          <form class="call-to-action__form call-to-action__form-fl form" id="formtSpecial" method="post">
+            <div class="form__field-wrap" data-validate-type="text" data-limitations="name"><input
+                class="form__input form__input--green" id="fieldNameformSpecial" type="text" name="name"
+                placeholder="Имя, например: Владимир"><label class="form__label" for="fieldNameformSpecial">Как к Вам
                 обращаться?</label></div>
-            <div class="form__field-wrap"><input class="form__input form__input--green" id="fieldTelformSpecial"
-                type="tel" name="tel" required placeholder="Телефон: +7 (915) 030-49-62"><label class="form__label"
-                for="fieldTelformSpecial">Ваш номер для связи</label></div>
+            <div class="form__field-wrap" data-validate-type="phone"><input class="form__input form__input--green"
+                id="fieldTelformSpecial" type="tel" name="tel" required placeholder="Телефон: +7 (915) 030-49-62"><label
+                class="form__label" for="fieldTelformSpecial">Ваш номер для связи</label></div>
           </form><button class="call-to-action__btn btn green-btn btn--sec" form="formtSpecial"
             type="submit">Отправить</button>
         </div>
@@ -190,28 +191,28 @@
         <div class="trust__clients-fl">
           <div class="clients-fl">
             <a class="clients-fl__link" href="https://irkut.com/" target="_blank">
-              <picture><img class="clients-fl__img" src="img/logo1.png" width="181px" height="131px"
+              <picture><img class="clients-fl__img" src="img/logo1.png" width="181" height="131"
                   alt="Логотип компании «Иркут»">
               </picture>
             </a><a class="clients-fl__link" href="http://fsb.ru/" target="_blank">
-              <picture><img class="clients-fl__img" src="img/logo2.png" width="103px" height="173px"
+              <picture><img class="clients-fl__img" src="img/logo2.png" width="103" height="173"
                   alt="Логотип ФГКУ «УА ФСБ России»">
               </picture>
             </a><a class="clients-fl__link" href="https://mil.ru/" target="_blank">
-              <picture><img class="clients-fl__img" src="img/logo3.png" width="196px" height="127px"
-                  alt="Логотип МО РФ"></picture>
+              <picture><img class="clients-fl__img" src="img/logo3.png" width="196" height="127" alt="Логотип МО РФ">
+              </picture>
             </a><a class="clients-fl__link"
               href="https://udprf.ru/content/federalnoe-gosudarstvennoe-byudzhetnoe-uchrezhdenie-specialnyy-letnyy-otryad-rossiya"
               target="_blank">
-              <picture><img class="clients-fl__img" src="img/logo4.png" width="129px" height="128px"
+              <picture><img class="clients-fl__img" src="img/logo4.png" width="129" height="128"
                   alt="Логотип Специальный лётный отряд «Россия»">
               </picture>
             </a><a class="clients-fl__link" href="www.cubana.cu" target="_blank">
-              <picture><img class="clients-fl__img" src="img/logo5.png" width="166px" height="65px"
+              <picture><img class="clients-fl__img" src="img/logo5.png" width="166" height="65"
                   alt="Логотип Cubana Puerta de Cuba al Mundo">
               </picture>
             </a><a class="clients-fl__link" href="http://aviamchs.ru/" target="_blank">
-              <picture><img class="clients-fl__img" src="img/logo6.png" width="94px" height="74px" alt="Авиации МЧС">
+              <picture><img class="clients-fl__img" src="img/logo6.png" width="94" height="74" alt="Авиации МЧС">
               </picture>
             </a>
           </div>
@@ -227,21 +228,23 @@
         </div>
       </section>
       <section class="call-to-action call-to-action--sec" id="callToActionSec">
-        <div class="call-to-action__inner call-to-action__inner-fl call-to-action__inner-car">
+        <div class="call-to-action__inner call-to-action__inner-fl call-to-action__inner-car"
+          data-validate="data-validate" data-callback="callback">
           <h2 class="call-to-action__title call-to-action__title-fl call-to-action__title-car">Оставьте заявку,
             чтобы<span class="green-text">
               закрепить за собой скидку*</span>
           </h2>
           <p class="call-to-action__dsc call-to-action__dsc--green">дизайн-концепт бесплатно
           </p>
-          <form class="call-to-action__form call-to-action__form-car form" id="formtSpecialSec">
-            <div class="form__field-wrap"><input class="form__input form__input--green" id="fieldNameformSpecialSec"
-                type="text" name="name" placeholder="Имя, например: Владимир"><label class="form__label"
-                for="fieldNameformSpecial">Как к Вам
+          <form class="call-to-action__form call-to-action__form-car form" id="formtSpecialSec" method="post">
+            <div class="form__field-wrap" data-validate-type="text" data-limitations="name"><input
+                class="form__input form__input--green" id="fieldNameformSpecialSec" type="text" name="name"
+                placeholder="Имя, например: Владимир"><label class="form__label" for="fieldNameformSpecial">Как к Вам
                 обращаться?</label></div>
-            <div class="form__field-wrap"><input class="form__input form__input--green" id="fieldTelformSpecialSec"
-                type="tel" name="tel" required placeholder="Телефон: +7 (915) 030-49-62"><label class="form__label"
-                for="fieldTelformSpecial">Ваш номер для связи</label></div>
+            <div class="form__field-wrap" data-validate-type="phone"><input class="form__input form__input--green"
+                id="fieldTelformSpecialSec" type="tel" name="tel" required
+                placeholder="Телефон: +7 (915) 030-49-62"><label class="form__label" for="fieldTelformSpecial">Ваш номер
+                для связи</label></div>
           </form><button class="call-to-action__btn btn green-btn btn--sec" form="formtSpecial"
             type="submit">Отправить</button>
         </div>
@@ -270,7 +273,7 @@
     <div class="page__footer-wrapper">
       <footer class="page-footer page-footer--sec">
         <div class="page-footer__inner page-footer__inner--sec"><a class="logo" href="#"><img src="img/logo.png"
-              alt="Логотип АО «АРК Техник»" width="190px" height="67px"></a>
+              alt="Логотип АО «АРК Техник»" width="190" height="67"></a>
           <nav class="page-footer__nav">
             <ul class="nav">
               <li class="nav__item nav__item-footer nav__item-footer--green-active"><a href="#">Брендирование
@@ -290,16 +293,20 @@
       </footer>
     </div>
   </div>
-  <section class="modal" id="modal-callback" tabindex="-1" aria-hidden="true">
+  <section class="modal" id="modal-callback" tabindex="-1" aria-hidden="true" data-modal="modal-callback">
     <div class="modal__dialog">
       <div class="modal__content"><button class="close  close--sm modal__close" type="button" aria-label="Закрыть"
-          title="Закрыть" data-modal="close"><span>Закрыть</span></button>
+          title="Закрыть" data-close-modal><span>Закрыть</span></button>
         <header class="modal__header">
           <h5 class="modal__title">Оставьте контакты</h5>
         </header>
       </div>
     </div>
   </section>
+  <script src="js/formValidate.js">
+  </script>
+  <script src="js/modals.js">
+  </script>
   <script src="js/bundle.js">
   </script>
 

@@ -65,7 +65,7 @@
             </ul>
           </nav>
           <div class="page-header__feedback"><a href="tel:+74955555555"> 8 (495) 555 55-55</a><a href="#modal-callback"
-              data-modal="open">Обратный звонок</a></div>
+              data-open-modal="modal-callback">Обратный звонок</a></div>
         </div>
       </header>
       <section class="intro">
@@ -74,8 +74,8 @@
             <span>для бизнеса</span>
           </h1>
           <p class="intro__dsc">От&nbsp;компании, обслуживающей авиасектор России</p><button
-            class="btn  btn--w-100 btn--is-icon" type="button" data-modal-target="#modal-callback"
-            data-modal="open">Оставить заявку<span class="btn__icon"><svg width="38" height="16">
+            class="btn  btn--w-100 btn--is-icon" type="button" data-open-modal="modal-callback">Оставить заявку<span
+              class="btn__icon"><svg width="38" height="16">
                 <use xlink:href="img/sprite.svg#arrow"></use>
               </svg></span></button>
         </div>
@@ -181,8 +181,8 @@
           <div class="guarantee__left-col">
             <picture><img class="guarantee__img" src="img/billboard.jpg" alt="Изображения процесса печати принтера"
                 width="410"></picture><button class="btn  btn--is-icon btn--color-revert guarantee__btn" type="button"
-              data-modal-target="#modal-callback" data-modal="open">Получить подробную консультацию<span
-                class="btn__icon"><svg width="38" height="16">
+              data-open-modal="modal-callback">Получить подробную консультацию<span class="btn__icon"><svg width="38"
+                  height="16">
                   <use xlink:href="img/sprite.svg#arrow"></use>
                 </svg></span></button>
           </div>
@@ -230,15 +230,16 @@
         </div>
       </section>
       <section class="call-to-action" id="callToAction">
-        <div class="call-to-action__inner">
+        <div class="call-to-action__inner" data-validate="data-validate" data-callback="callback">
           <h2 class="call-to-action__title">Запросите <span>индивидуальный</span> расчет стоимости</h2>
           <p class="call-to-action__dsc">с&nbsp;действующим скидочным предложением <b>до&nbsp;12&nbsp;сентября</b></p>
-          <form class="call-to-action__form form" id="formtSpecial">
-            <div class="form__field-wrap"><input class="form__input" id="fieldNameformSpecial" type="text" name="name"
-                placeholder="Имя, например: Владимир"><label class="form__label" for="fieldNameformSpecial">Как к Вам
+          <form class="call-to-action__form form" id="formtSpecial" method="post">
+            <div class="form__field-wrap" data-validate-type="text" data-limitations="name"><input class="form__input"
+                id="fieldNameformSpecial" type="text" name="name" placeholder="Имя, например: Владимир"><label
+                class="form__label" for="fieldNameformSpecial">Как к Вам
                 обращаться?</label></div>
-            <div class="form__field-wrap"><input class="form__input" id="fieldTelformSpecial" type="tel" name="tel"
-                required placeholder="Телефон: +7 (915) 030-49-62"><label class="form__label"
+            <div class="form__field-wrap" data-validate-type="phone"><input class="form__input" id="fieldTelformSpecial"
+                type="tel" name="tel" required placeholder="Телефон: +7 (915) 030-49-62"><label class="form__label"
                 for="fieldTelformSpecial">Ваш номер для связи</label></div>
           </form><button class="call-to-action__btn btn" form="formtSpecial" type="submit">Отправить</button>
         </div>
@@ -311,18 +312,21 @@
         </div>
       </section>
       <section class="call-to-action call-to-action--bg--vector" id="callToActionSecond">
-        <div class="call-to-action__inner call-to-action__inner--grid--form-side">
+        <div class="call-to-action__inner call-to-action__inner--grid--form-side" data-validate="data-validate"
+          data-callback="callback">
           <h2 class="call-to-action__title">Оставьте заявку <span>до&nbsp;12&nbsp;сентября</span> чтобы забронировать
             индивидуальную <span>скидку</span></h2>
           <p class="call-to-action__dsc">разработку дизайн-концепта</p>
-          <form class="call-to-action__form form" id="formtDiscount">
-            <div class="form__field-wrap"><input class="form__input" id="fieldNameformDiscount" type="text" name="name"
-                placeholder="Имя, например: Владимир"><label class="form__label" for="fieldNameformDiscount">Как к Вам
+          <form class="call-to-action__form form" id="formtDiscount" method="post">
+            <div class="form__field-wrap" data-validate-type="text" data-limitations="name"><input class="form__input"
+                id="fieldNameformDiscount" type="text" name="name" placeholder="Имя, например: Владимир"><label
+                class="form__label" for="fieldNameformDiscount">Как к Вам
                 обращаться?</label></div>
-            <div class="form__field-wrap"><input class="form__input" id="fieldTelformDiscount" type="tel" name="tel"
-                required placeholder="Телефон: +7 (915) 030-49-62"><label class="form__label"
-                for="fieldTelformDiscount">Ваш номер для связи</label></div><button class="call-to-action__btn btn"
-              form="formtSpecial" type="submit">Отправить</button>
+            <div class="form__field-wrap" data-validate-type="phone"><input class="form__input"
+                id="fieldTelformDiscount" type="tel" name="tel" required
+                placeholder="Телефон: +7 (915) 030-49-62"><label class="form__label" for="fieldTelformDiscount">Ваш
+                номер для связи</label></div><button class="call-to-action__btn btn" form="formtSpecial"
+              type="submit">Отправить</button>
           </form>
         </div>
       </section>
@@ -352,16 +356,20 @@
       </footer>
     </div>
   </div>
-  <section class="modal" id="modal-callback" tabindex="-1" aria-hidden="true">
+  <section class="modal" id="modal-callback" tabindex="-1" aria-hidden="true" data-modal="modal-callback">
     <div class="modal__dialog">
       <div class="modal__content"><button class="close  close--sm modal__close" type="button" aria-label="Закрыть"
-          title="Закрыть" data-modal="close"><span>Закрыть</span></button>
+          title="Закрыть" data-close-modal><span>Закрыть</span></button>
         <header class="modal__header">
           <h5 class="modal__title">Оставьте контакты</h5>
         </header>
       </div>
     </div>
   </section>
+  <script src="js/formValidate.js">
+  </script>
+  <script src="js/modals.js">
+  </script>
   <script src="js/bundle.js">
   </script>
 
