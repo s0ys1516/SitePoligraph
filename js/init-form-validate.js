@@ -1,4 +1,4 @@
-import FormsValidate from './form-validate';
+import FormsValidate from './form-validate.js';
 const formWrappers = document.querySelectorAll('[data-validate]');
 
 const resetForm = (form) => {
@@ -46,7 +46,7 @@ const callbacks = {
 
 const setCustomPhoneInputsEvent = () => {
   if (document.querySelectorAll('[data-validate-type="phone"] input').length) {
-    document.querySelector('html').addEventListener('input', ({target}) => {
+    document.querySelector('html').addEventListener('input', ({ target }) => {
       if (target.closest('[data-validate-type="phone"]')) {
         target.closest('[data-validate-type="phone"]').querySelector('input').dispatchEvent(new Event('input'));
       }

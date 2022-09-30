@@ -1,5 +1,5 @@
-import {ScrollLock} from './scroll-lock';
-import {FocusLock} from './focus-lock';
+import { ScrollLock } from './scroll-lock.js';
+import { FocusLock } from './focus-lock.js';
 
 export class Modals {
   constructor(settings = {}) {

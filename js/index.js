@@ -1,6 +1,6 @@
-import { CustomSelect } from './custom-select';
-import { initFormValidate } from './init-form-validate';
-import { initModals } from './init-modals';
+import { CustomSelect } from './custom-select.js';
+import { initFormValidate } from './init-form-validate.js';
+import { initModals } from './init-modals.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {

@@ -1,4 +1,4 @@
-import {Modals} from './modals';
+import { Modals } from './modals.js';
 
 let modals;
 
@@ -36,4 +36,4 @@ const initModals = () => {
   window.modals = modals;
 };
 
-export {modals, initModals};
+export { modals, initModals };
