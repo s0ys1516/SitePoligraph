@@ -1491,6 +1491,24 @@ span.green-text {
 	color: #61A120;
 }
 
+.nav__item-header--orange:hover {
+	color: #e27e36;
+	border: 1px solid #e27e36;
+}
+
+.nav__item-header--orange:hover > a {
+	color: #e27e36;
+}
+
+.nav__item-header--orange-active {
+	color: #e27e36;
+	border: 1px solid #e27e36;
+}
+
+.nav__item-header--orange-active > a {
+	color: #e27e36;
+}
+
 .nav__item-footer:hover > a {
 	color: #2D2AB9;
 	text-decoration: underline;
@@ -1498,6 +1516,16 @@ span.green-text {
 
 .nav__item-footer--blue-active > a {
 	color: #2D2AB9;
+	text-decoration: underline;
+}
+
+.nav__item-orange:hover > a {
+	color: #e27e36;
+	text-decoration: underline;
+}
+
+.nav__item-footer--orange-active > a {
+	color: #e27e36;
 	text-decoration: underline;
 }
 
